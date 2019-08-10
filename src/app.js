@@ -8,6 +8,8 @@ const app = express();
 const geocode = require('../public/js/utils').geocode;
 const weather = require('../public/js/utils').weather;
 
+const port = process.env.PORT || 3000;
+
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '../templates/views'));
 hbs.registerPartials(path.join(__dirname, '../templates/partials'));
@@ -68,6 +70,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-  console.log("Server listening to server 3000");
+app.listen(port, () => {
+  console.log("Server listening to server "+port);
 });
