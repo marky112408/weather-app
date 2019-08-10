@@ -1,0 +1,36 @@
+{{>header}}
+
+<body>
+  <div class="container pt-5">
+
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h4>Weather Application</h4>
+        </div>
+        <form id = "weather_form">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col-12 mb-3">
+                <input id = "search" type="text" class="form-control" placeholder="Search Location ... " name = "address">
+              </div>
+              <div class="col-12 mb-3">
+                <p id = "address"><strong>Address:</strong></p>
+                <!-- {{location}} -->
+              </div>
+              <div class="col-12 mb-3">
+                <p id = "forecast"><strong>Forecast:</strong></p>
+                <!-- {{forecast}} -->
+              </div>
+            </div>
+          </div>
+        <div class="card-footer text-right">
+          <button id = "btn_submit" type = "submit" class="btn btn-sm btn-success"><i class="fa fa-search mr-2"></i>Search</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+{{>footer}}
